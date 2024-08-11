@@ -46,7 +46,7 @@ jobs:
 
     - name: Build APK
       working-directory: ./android
-      run: ./gradlew assemble${{ matrix.buildType }} -PbuildAbi=${{ matrix.abi }}
+      run: ./android/gradlew assemble${{ matrix.buildType }} -PbuildAbi=${{ matrix.abi }}
 
 
     - name: Upload APK
