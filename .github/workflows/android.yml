@@ -35,7 +35,7 @@ jobs:
         java-version: 11
 
     - name: Set up Android SDK
-      uses: android-actions/setup-android@v2
+      uses: android-actions/setup-android@v1
       with:
         api-level: 30
         ndk-version: 21.4.7075529
@@ -45,8 +45,7 @@ jobs:
       run: yes | sdkmanager --licenses && sdkmanager "platforms;android-30" "build-tools;30.0.3"
 
     - name: Build APK
-      working-directory: ./android
-      run: ./android/gradlew assemble${{ matrix.buildType }} -PbuildAbi=${{ matrix.abi }}
+      run: ./gradlew assemble${{ matrix.buildType }} -PbuildAbi=${{ matrix.abi }}
 
 
     - name: Upload APK
