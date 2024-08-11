@@ -12,7 +12,8 @@ dependencies:
   google_fonts: ^5.0.0
   shared_preferences: ^2.1.0  
   sqflite: ^2.2.8+2  
-  path_provider: ^2.0.13  
+  path_provider: ^2.0.13
+  
 
 flutter:
   fonts:
@@ -26,4 +27,9 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
 
+flutter_launcher_icons:
+  image_path_android: "assets/icon/icon.jpg"
+  android: true
+  min_sdk_android: 21
