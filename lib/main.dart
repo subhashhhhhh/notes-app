@@ -21,7 +21,7 @@ class NotesApp extends StatelessWidget {
       animation: themeService,
       builder: (context, _) {
         return MaterialApp(
-          title: 'Notes App',
+          title: 'Notes',
           theme: ThemeData(
             useMaterial3: true,
             brightness:
